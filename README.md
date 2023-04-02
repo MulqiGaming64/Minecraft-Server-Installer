@@ -20,8 +20,8 @@ An Unofficial Minecraft Server Software Installer!
 Just copy and Paste to Command Line!
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/XanderID/Minecraft-Server-Installer/main/installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/XanderID/Minecraft-Server-Installer/termux-android/installer.sh)
 ```
 
 ## Available Installer
-You can see how many types there are and how many installers there are, [In Here](https://github.com/XanderID/Minecraft-Server-Installer/tree/main/installer).
+You can see how many types there are and how many installers there are, [In Here](https://github.com/XanderID/Minecraft-Server-Installer/tree/termux-android/installer).

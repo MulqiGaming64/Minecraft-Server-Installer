@@ -16,7 +16,7 @@ fi
 echo -e "Jq Installed";
 sleep 1
 
-installer_json=$(curl -s https://raw.githubusercontent.com/XanderID/Minecraft-Server-Installer/main/config/installer.json)
+installer_json=$(curl -s https://raw.githubusercontent.com/XanderID/Minecraft-Server-Installer/termux-android/config/installer.json)
 
 categories=$(echo $installer_json | jq -r 'keys[]')
 message=""
