@@ -104,13 +104,13 @@ echo -e "\nStart Installing PocketMine-MP '$installVersion' on Path $pathInstall
 # Download
 curl -L -s -o PocketMine-MP.phar https://github.com/pmmp/PocketMine-MP/releases/download/$installVersion/PocketMine-MP.phar
 curl -L -s -o start.sh https://github.com/pmmp/PocketMine-MP/releases/download/$installVersion/start.sh
-curl -L -s -o linux-x86_64-bin.zip https://github.com/MulqiGaming64/php-build-scripts_fork/releases/download/1.0.0/linux-x86_64-bin.zip
+curl -L -s -o android-aarch64-bin.zip https://github.com/XanderID/php-build-scripts_fork/releases/download/1.0.0/android-aarch64-bin.zip
 
 # Bin Folder
-unzip -qq linux-x86_64-bin.zip
+unzip android-aarch64-bin.zip
 EXTENSION_DIR=$(find "$(pwd)/bin" -name "*debug-zts*")
 grep -q '^extension_dir' bin/php7/bin/php.ini && sed -i'bak' "s{^extension_dir=.*{extension_dir=\"$EXTENSION_DIR\"{" bin/php7/bin/php.ini || echo "extension_dir=\"$EXTENSION_DIR\"" >> bin/php7/bin/php.ini
-rm -rf linux-x86_64-bin.zip
+rm -rf android-aarch64-bin.zip
 
 # Install
 mkdir crashdumps
